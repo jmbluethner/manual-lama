@@ -9,6 +9,8 @@ Kontakt: develop@nighttimedev.com
 Weitere Projekte: https://die-lan.party  
 <br>
 https://nighttimedev.com  
+##### Impressum:
+Der Markdown-Viewer von Github zeigt die geschachtelte Liste des Index falsch an.
 <hr>
 
 ### Was in diesem Manual zu finden ist
