@@ -175,9 +175,9 @@ Hier sind alle getätigten Bans von allen Gameservern zu finden. Dieses Plugin i
 ![Badge_License](https://img.shields.io/github/license/nighttimedev/lama.svg)
 ![Badege_Size](https://img.shields.io/github/repo-size/nighttimedev/lama.svg)
 ![Badge_Language](https://img.shields.io/github/languages/top/nighttimedev/lama.svg)
-![Badge_LastCommit](https://img.shields.io/github/last-commit/nighttimedev/lama.svg)  
+![Badge_LastCommit](https://img.shields.io/github/last-commit/nighttimedev/lama.svg)
 ![Badge_ClosedIssues](https://img.shields.io/github/issues-closed/nighttimedev/lama.svg)
-![Badge_OpenIssues](https://img.shields.io/github/issues/nighttimedev/lama.svg)  
+![Badge_OpenIssues](https://img.shields.io/github/issues/nighttimedev/lama.svg)
 ![Badge_Stars](https://img.shields.io/github/stars/nighttimedev/lama.svg?style=social)
 ##### **1. Struktur**
 Die Dateistruktur von LAMA ist simpel gehalten.  
