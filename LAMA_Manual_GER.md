@@ -204,11 +204,11 @@ Der Root folder enthält alle Seiten auf die der User Zugriff benötigt (abgeseh
 ##### **2. Plugins entwickeln**
 Die Entwicklung von Plugins ist sehr einfach, sofern man Kenntnisse in HTML und CSS hat. Damit eine funktionelle Dynamik genutzt werden kann ist zudem natürlich auch PHP notwendig.  
 Jedes Plugin muss, unabhängig von seiner Funktion, folgende Grundstruktur einhalten:  
-```php
+```html
 <!DOCTYPE html>
 <html>
   <head>
-    <?php include '../assets/php/sessioncheck.php' ?>
+    <?php include '../assets/php/sessioncheck.php'; ?>
     <meta charset="utf-8"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link rel="stylesheet" href="../assets/css/dashboard.css"/>
