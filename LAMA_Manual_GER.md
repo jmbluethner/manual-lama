@@ -159,7 +159,7 @@ Sollte es beim Installer zu einem Error kommen, zeigt er diesen an. Hierdurch ka
 Wenn die Installation erfolgreich abgeschlossen ist, wurde, sofern es eine saubere Installation ist, ein Standard-User angelegt.  
 <br>
 Die Login-Daten hier sind:  
-*root@root.com* : *lamaManager!*  
+*root@root.root* : *lamaManager!*  
 <br>
 *Note: Fast immer liegt der Fehler bei der config.php, wenn hier z.B. bei der Adresse ein Tippfehler oder ein ungewolltes Leerzeichen unterkommen sind.*  
 <br>  
