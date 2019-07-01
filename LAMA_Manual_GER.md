@@ -136,6 +136,20 @@ Als erstes bewegen Sie sich zu dem Verzeichnis in dem LAMA installiert werden so
 ```
 Hier gehen wir in den Webroot, klonen die Repository und verschieben anschließend alle Dateien direkt in den Rootpath. Danach wird der leere Ordner gelöscht.  
 ###### 2.3 Installation von LAMA
+Zuerst muss eine config Datei im Root der Repository erstellt werden.  
+```php
+<?php
+  return [
+    'SQLhost' => '',
+    'SQLdbname' => '',
+    'SQLuser' => '',
+    'SQLpass' => '',
+    'timezone' => 'Europe/Berlin',
+    'errorReporting' => 0,
+    'imageDB' => 'https://cdn.nighttimedev.com/images/counterstrike/maps/'
+  ];
+?>
+```
 Dank dem eigenen Installers kann sich LAMA zu fast 100% selbst konfigurieren. Hierdurch kann, oft auch nervenaufreibende, Arbeit mit SQL / phpMyAdmin vermieden werden. Hierduch werden auch potentielle Fehlerquellen ausgeschlossen.  
 Die Automatische Installation kann ohne Probleme mehrmals ausgeführt werden, da dieser niemals Daten löscht, sondern nur anlegt. Überschreiben ist auch nicht möglich, da der Installer jeden bereits vorhandenen Datensatz sofort überspringt.  
 Der Installer kann sehr einfach gestartet werden, indem <code>https://your_domain_or_IP/install</code> aufgerufen wird.  
