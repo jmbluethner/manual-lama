@@ -48,6 +48,7 @@ https://nighttimedev.com
 ##### Für Coder
 1. **Struktur**
 1. **Plugins entwickeln**
+1. config.php
 
 <hr>
 
@@ -238,6 +239,25 @@ Bei jedem Aufruf der Seite wird <code>/plugins</code> neu indexiert. Dies passie
 
 Um ein einheitliches Design, sowie die 'Theme' Funktion aus <code>/plugins/customize.php</code> zu erhalten, ist es strikt notwendig, nicht mit eigenen Farben zu arbeiten. <code>/assets/css/dashboard.css</code> sollte alle nötigen Klassen liefern.  
 Ist dies nicht der Fall, also muss eine neue Klasse definiert werden, müssen hier die root Farben der <code>/assets/css/dashboard.css</code> verwendet werden.
+##### **3. config.php**
+Die config.php muss wie folgt aussehen:  
+```php
+<?php
+  return [
+    'SQLhost' => '',
+    'SQLdbname' => '',
+    'SQLuser' => '',
+    'SQLpass' => '',
+    'timezone' => 'Europe/Berlin',
+    'errorReporting' => 0,
+    'imageDB' => 'https://cdn.nighttimedev.com/images/counterstrike/maps/'
+  ];
+?>
+```
+Die SQL-Informationen dienen, offensichtlicher Weise, der Interaktion zwischen LAMA und SQL.  
+<code>timezone</code> ist dafür verantwortlich, dass Prozesse wie zum Beispiel das Log die richtigen Zeiten verwenden.  
+<code>errorReporting</code> erlaubt das Anzeigen von sämtlichen genaueren Fehlermeldungen, auch wenn diese mehr als 'Warning' zu verstehen sind.  
+<code>imageDB</code> ist der Server oder Pfad unter dem die Map-Bilder in /plugins/servers gefunden werden kann. Alle Maps des active duty Pools sind in <code>https://cdn.nighttimedev.com/images/counterstrike/maps/</code> zu finden. Falls weitere Bilder, von z.B. Workshop Maps, benötigt werden, kann hier dann eine eigene Adresse angegeben werden. Die Bilder müssen immer so heißen, wie die Query sie in /plugins/servers anzeigt. Die Dateiendung MUSS .jpg sein. Die größe des Bilder ist egal, es wird durch CSS passend gezogen.
 <hr>
 
 ## Für weitere Fragen:
