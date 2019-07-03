@@ -263,12 +263,19 @@ Die SQL-Informationen dienen, offensichtlicher Weise, der Interaktion zwischen L
 Um in die .log Datei zu schreiben, existiert eine eigene Funktion.  
 Funktionsweise:  
 ```php
+include "pfad-zum-snippet/write-to-log.php";
+writeToLog(PFAD ZUR CONFIG,PFAD ZUM LOG,SUFFIX);
+```
+```php
 include "./assets/php/write-to-log.php";
 writeToLog('./config.php','./lama.log','Login FAILED!');
 ```
 Hier würde sich folgede Ausgabe ergeben:  
 ```
-[jahr-monat-tag h:s:m | Username (wenn verfügbar) :: IP] Login FAILED!
+[jahr-monat-tag h:m:s | Username (wenn verfügbar) :: IP] Login FAILED!
+```
+```
+[2019-07-03 12:08:35 | Root :: 127.0.0.1] Login FAILED!
 ```
 <hr>
 
