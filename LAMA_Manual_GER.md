@@ -48,7 +48,8 @@ https://nighttimedev.com
 ##### Für Coder
 1. **Struktur**
 1. **Plugins entwickeln**
-1. config.php
+1. **config.php**
+1. **Schreiben ins Log**
 
 <hr>
 
@@ -267,7 +268,7 @@ writeToLog('./config.php','./lama.log','Login FAILED!');
 ```
 Hier würde sich folgede Ausgabe ergeben:  
 ```
-[jahr-monat-tag h:s:m | Username (wenn verfügbar) :: IP]
+[jahr-monat-tag h:s:m | Username (wenn verfügbar) :: IP] Login FAILED!
 ```
 <hr>
 
