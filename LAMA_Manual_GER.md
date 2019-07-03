@@ -258,6 +258,17 @@ Die SQL-Informationen dienen, offensichtlicher Weise, der Interaktion zwischen L
 <code>timezone</code> ist dafür verantwortlich, dass Prozesse wie zum Beispiel das Log die richtigen Zeiten verwenden.  
 <code>errorReporting</code> erlaubt das Anzeigen von sämtlichen genaueren Fehlermeldungen, auch wenn diese mehr als 'Warning' zu verstehen sind.  
 <code>imageDB</code> ist der Server oder Pfad unter dem die Map-Bilder in /plugins/servers gefunden werden kann. Alle Maps des active duty Pools sind in <code>https://cdn.nighttimedev.com/images/counterstrike/maps/</code> zu finden. Falls weitere Bilder, von z.B. Workshop Maps, benötigt werden, kann hier dann eine eigene Adresse angegeben werden. Die Bilder müssen immer so heißen, wie die Query sie in /plugins/servers anzeigt. Die Dateiendung MUSS .jpg sein. Die größe des Bilder ist egal, es wird durch CSS passend gezogen.
+##### **4. Schreiben in LOG**
+Um in die .log Datei zu schreiben, existiert eine eigene Funktion.  
+Funktionsweise:  
+```php
+include "./assets/php/write-to-log.php";
+writeToLog('./config.php','./lama.log','Login FAILED!');
+```
+Hier würde sich folgede Ausgabe ergeben:  
+```
+[jahr-monat-tag h:s:m | Username (wenn verfügbar) :: IP]
+```
 <hr>
 
 ## Für weitere Fragen:
